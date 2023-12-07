@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Profile</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            text-align: center;
+        }
+
+        #profile {
+            max-width: 400px;
+            margin: 50px auto;
+            padding: 20px;
+            /* Change the background color to beige (#f5f5dc) */
+            background-color: #f5f5dc;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        #profile img {
+            max-width: 100%;
+            /* Remove the border-radius property to make the photo rectangle */
+            /* border-radius: 50%; */
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
+
+        input {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 16px;
+            box-sizing: border-box;
+            /* Make the input fields read-only */
+            pointer-events: none;
+            background-color: #eee; /* Add a background color to indicate it's not editable */
+        }
+    </style>
+</head>
+<body>
+
+    <div id="profile">
+         <img src="your_picture.jpg" alt="zildjian lazo">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" value="zildjian lazo" readonly>
+
+        <label for="age">Age:</label>
+        <input type="text" id="age" name="age" value="21" readonly>
+
+        <label for="section">Section:</label>
+        <input type="text" id="section" name="section" value="221" readonly>
+
+        <label for="quote">quote:</label>
+        <input type="text" id="section" name="quote" value="everything u like, i liked in 0000bc" readonly>
+    </div>
+
+</body>
+</html>
